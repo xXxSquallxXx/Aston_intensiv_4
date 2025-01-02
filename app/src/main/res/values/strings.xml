@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <string name="user_photo">Ляляля</string>
+    <string name="user_not_found">Пользователь не найден</string>
+    <string name="hello_fragment_c">Hello Fragment C</string>
+    <string name="user_full_name">%1$s %2$s</string>
+    <string name="task1">Задание 1</string>
+    <string name="task2">Задание 2</string>
+    <string name="go_to_b">Перейти к B</string>
+    <string name="go_to_c">Перейти к C</string>
+    <string name="go_to_a">Назад к A</string>
+    <string name="go_to_d">Перейти к D</string>
+    <string name="reset_a">На A (сброс)</string>
+    <string name="reset_b">На B (сброс)</string>
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="phone">Телефон</string>
+    <string name="save">Сохранить</string>
+    <string name="first_last">Имя Фамилия</string>
+
+</resources>

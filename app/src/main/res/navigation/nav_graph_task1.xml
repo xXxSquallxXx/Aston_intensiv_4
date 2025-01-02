@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_task1"
+    app:startDestination="@id/fragmentA">
+
+    <!-- Фрагмент A -->
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.fragments.task1.FragmentA"
+        android:label="Фрагмент A"
+        tools:layout="@layout/fragment_a" />
+
+    <!-- Фрагмент B -->
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.fragments.task1.FragmentB"
+        android:label="Фрагмент B"
+        tools:layout="@layout/fragment_b" />
+
+    <action
+        android:id="@+id/action_fragmentA_to_fragmentB"
+        app:destination="@id/fragmentB" />
+
+    <!-- Фрагмент C -->
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.fragments.task1.FragmentC"
+        android:label="Фрагмент C"
+        tools:layout="@layout/fragment_c">
+
+        <argument
+            android:name="message"
+            app:argType="string" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_fragmentB_to_fragmentC"
+        app:destination="@id/fragmentC" />
+
+    <action
+        android:id="@+id/action_fragmentB_to_fragmentA"
+        app:destination="@id/fragmentA" />
+
+    <!-- Фрагмент D -->
+    <fragment
+        android:id="@+id/fragmentD"
+        android:name="com.example.fragments.task1.FragmentD"
+        android:label="Фрагмент D"
+        tools:layout="@layout/fragment_d" />
+
+    <action
+        android:id="@+id/action_fragmentC_to_fragmentD"
+        app:destination="@id/fragmentD" />
+
+    <action
+        android:id="@+id/action_fragmentC_to_fragmentA"
+        app:destination="@id/fragmentA"
+        app:popUpTo="@id/fragmentA"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/action_fragmentD_to_fragmentB"
+        app:destination="@id/fragmentB"
+        app:popUpTo="@id/fragmentB"
+        app:popUpToInclusive="true" />
+</navigation>

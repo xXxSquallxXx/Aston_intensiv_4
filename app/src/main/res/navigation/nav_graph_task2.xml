@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentUserList">
+
+    <fragment
+        android:id="@+id/fragmentUserList"
+        android:name="com.example.fragments.task2.fragments.FragmentUserList"
+        android:label="Список пользователей"
+        tools:layout="@layout/fragment_user_list" >
+        <action
+            android:id="@+id/action_userList_to_editUser"
+            app:destination="@id/fragmentEditUser" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEditUser"
+        android:name="com.example.fragments.task2.fragments.FragmentEditUser"
+        android:label="Редактирование пользователя"
+        tools:layout="@layout/fragment_edit_user" />
+</navigation>

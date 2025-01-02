@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_fragment_c"
+        android:textSize="18sp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/button_to_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_d"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/button_to_a_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_a"
+        android:layout_marginTop="15dp" />
+</LinearLayout>
